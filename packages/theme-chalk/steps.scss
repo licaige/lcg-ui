@@ -1,0 +1,16 @@
+@import "./common/var.scss";
+@import "./mixins/mixin.scss";
+
+
+@include b(steps) {
+  display: flex;
+
+  @include m(horizontal) {
+    white-space: nowrap;
+  }
+
+  @include m(vertical) {
+    height: 100%;
+    flex-flow: column;
+  }
+}
